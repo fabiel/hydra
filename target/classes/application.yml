@@ -1,0 +1,17 @@
+server:
+   port : 8080
+   servlet:
+      context-path: /hydra
+  
+spring:
+   jpa:
+     database: POSTGRESQL
+     hibernate.ddl-auto: update
+     show-sql: true
+   
+   datasource:
+     platform: postgres
+     driverClassName: org.postgresql.Driver
+     url: jdbc:postgresql://localhost:5432/hydra
+     username: postgres
+     password: root
